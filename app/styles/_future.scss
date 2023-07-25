@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
+$paddingBord: 0.5rem 7rem;
+$dosiFont: "Dosis", sans-serif;
+.futureSectn {
+  width: 100%;
+  height: 200px;
+  padding: $paddingBord;
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+  .top-future-sectn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .subHeading {
+      width: 50%;
+      text-align: center;
+      margin: 0 auto;
+      @media (max-width: 988px) {
+        width: 90%;
+      }
+    }
+  }
+  .bottm-future-sectn {
+    width: 100%;
+    height: 90vh;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+    .left-bottm-future {
+      display: flex;
+      width: 30%;
+      flex-direction: column;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        width: 100%;
+      }
+      .card {
+        height: 30%;
+        //         background-color: rgb(226, 16, 208);
+        padding: 1rem 3rem;
+        border-bottom: 4px solid rgba(218, 213, 213, 0.613);
+        @media (max-width: 768px) {
+          width: 100%;
+          padding: 2rem;
+        }
+        .card-top-sectn {
+          width: 100%;
+          .icon-details {
+            font-size: 1.5rem;
+            font-family: $dosiFont;
+          }
+        }
+        p {
+          // background-color: teal;
+          font-size: 1rem;
+          line-height: 28px;
+        }
+      }
+    }
+    .mid-bottm-future {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 60%;
+        height: 90%;
+        align-self: center;
+      }
+    }
+    .right-bottm-future {
+      display: flex;
+      width: 30%;
+      flex-direction: column;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        width: 100%;
+      }
+      .card {
+        height: 30%;
+        //         background-color: rgb(226, 16, 208);
+        padding: 1rem 3rem;
+        border-bottom: 4px solid rgba(218, 213, 213, 0.613);
+        @media (max-width: 768px) {
+          width: 100%;
+          padding: 2rem;
+        }
+        .card-top-sectn {
+          width: 100%;
+          .icon-details {
+            font-size: 1.5rem;
+            font-family: $dosiFont;
+          }
+        }
+        p {
+          // background-color: teal;
+          font-size: 1rem;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}

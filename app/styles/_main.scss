@@ -1,10 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+$primaryOrange: #fda901;
+$paddingBord: 0.5rem 10rem;
+$dosiFont: "Dosis", sans-serif;
 body {
-  background-color: teal;
   width: 100vw;
   min-height: 100vh;
+  .header {
+    width: 100%;
+    .top-header {
+      padding: $paddingBord;
+      width: 100%;
+      padding: 0.3rem 10rem;
+      font-size: 1.2rem;
+      display: flex;
+      gap: 1rem;
+      background-color: #293c8f;
+      color: white;
+      @media (max-width: 768px) {
+        padding: 0.3rem 0.5rem;
+      }
+      a {
+        color: white;
+      }
+    }
+    .nav-header {
+      background-color: white;
+      gap: 3rem;
+      justify-content: flex-start;
+      position: relative;
+      padding: 0.2rem 2rem;
+      @media (max-width: 768px) {
+        position: relative;
+        //         position: initial;
+      }
+      .hameMen {
+        display: none;
+        @media (max-width: 888px) {
+          display: block;
+        }
+      }
+      .nav-log {
+        @media (max-width: 768px) {
+          width: 100%;
+          display: flex;
+          justify-content: end;
+        }
+        img {
+          position: absolute;
+          margin-left: 7.7%;
+          top: 0;
+          height: 125px;
+          z-index: 230;
+          left: 1rem;
+          @media (max-width: 888px) {
+            margin-left: 1rem;
+            position: relative;
+            height: 80px;
+          }
+        }
+      }
+      .nav-Links {
+        gap: 2rem;
+        justify-content: flex-end;
+
+        margin-left: 14%;
+        @media (max-width: 988px) {
+          display: none;
+        }
+        a {
+          color: #1aa1d7;
+          font-family: $dosiFont;
+          font-size: 19px;
+          font-weight: 800;
+          line-height: 80px;
+          font-stretch: 100%;
+          .linkDot {
+            color: $primaryOrange;
+            font-size: 2rem;
+          }
+        }
+      }
+      .nav-actions {
+        padding: 0.2rem 1rem;
+        border-left: 2px solid $primaryOrange;
+        display: flex;
+        gap: 1rem;
+        @media (max-width: 768px) {
+          display: none;
+        }
+        img {
+          width: 60px;
+          height: 29px;
+          @media (max-width: 788px) {
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
 }

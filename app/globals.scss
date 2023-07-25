@@ -1,6 +1,9 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-@import'./styles/main';
+@import "./styles/main";
+@import "./styles/variables";
+@import "./styles/swiper";
+@import "./styles/future";
