@@ -67,7 +67,7 @@ export default function Header() {
         <div className="nav-Links center ">
           {navLinks.map((link) => (
             <Link href={link.path}>
-              <span className="linkDot">{link.dot}</span> {link.name}
+              <span className="linkDot">{link.dot} </span> {link.name}
             </Link>
           ))}
         </div>

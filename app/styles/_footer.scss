@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100;1,300&display=swap");
+$paddingBord: 0.5rem 10rem;
+.footer {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  height: 63vh;
+  background-color: #001b36;
+  color: white;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  //   gap: 2rem;
+  padding: $paddingBord;
+  @media (max-width: 1624px) {
+    height: auto;
+  }
+  @media (max-width: 1000px) {
+    height: auto;
+    padding: 1rem 4rem;
+  }
+  // @media (max-width: 768px) {
+  //   padding-left: 1rem;
+  //   padding: 1rem 2rem;
+  //   height: auto;
+  // }
+
+  .siteMap {
+    gap: 1rem;
+    .footer-title,
+    .title {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 24px;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    .links {
+      gap: 0.2rem;
+      .left-site-links {
+        // background-color: red;
+        a {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          color: white;
+        }
+      }
+      .right-site-links {
+        a {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          color: white;
+        }
+      }
+    }
+  }
+  .products {
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      //       background-color: rebeccapurple;
+    }
+  }
+  .Instagram {
+    .inst-links {
+      display: grid;
+      margin-top: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(5rem, 3fr));
+      a {
+        padding: 0.1rem 0rem;
+      }
+    }
+    .loadBtn {
+      background-color: rgb(68, 67, 67);
+      padding: 0.6rem 1rem;
+      border: none;
+      font-weight: 600;
+      color: white;
+      align-self: center;
+      border-radius: 5px;
+    }
+  }
+  .contact {
+    // background-color: red;
+    .contact-details {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+}
+.copyRightBanner {
+  background-color: black;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}

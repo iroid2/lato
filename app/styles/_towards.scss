@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
+$abeeFont: "ABeeZee", sans-serif;
+$paddingBord: 0.5rem 10rem;
+body {
+  //   background-color: red;
+  .towardSetion {
+    height: 100vh;
+    padding: $paddingBord;
+    margin-top: 2.5rem;
+    @media (max-width: 1624px) {
+      height: auto;
+    }
+    @media (max-width: 1039px) {
+      padding: 1rem 2rem;
+      height: auto;
+    }
+
+    .top-towards {
+      text-align: center;
+    }
+    .bottm-towards {
+      width: 100%;
+      margin-top: 2rem;
+      display: grid;
+      gap: 1.7rem;
+      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 3fr));
+        width: 100%;
+      }
+      .towards-Card {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        img {
+          width: 100%;
+        }
+
+        .towars-card-text {
+          text-align: center;
+          .title {
+            font-size: 24px;
+            font-family: $abeeFont;
+            padding: 0.7rem 0.1rem;
+          }
+          p {
+            padding: 0.3rem 0.1rem;
+            font-family: $abeeFont;
+            line-height: 28px;
+            font-size: 18px;
+            padding: 0.2rem;
+          }
+        }
+      }
+    }
+    a {
+      background-color: rgb(0, 151, 211);
+      text-align: center;
+      overflow: hidden;
+      padding: 3rem;
+      text-decoration: none;
+      color: white;
+      padding-top: 1rem;
+    }
+  }
+}

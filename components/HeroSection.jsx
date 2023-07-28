@@ -36,7 +36,7 @@ export default function HeroSection() {
         <SwiperSlide>
           <Image
             className="slide"
-            src={"/images/slide-img4.jpg"}
+            src={"/images/slide-img.png"}
             alt=""
             width={800}
             height={300}

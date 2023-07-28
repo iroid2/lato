@@ -2,8 +2,11 @@ import React from "react";
 import Headings from "./Headings";
 import FutureSectionCard from "./FutureSectionCard";
 import Image from "next/image";
+import { cardsLeft } from "@/futureCard";
+import { cardsright } from "@/futureCard";
 
 export default function Futuresection() {
+  // console.log(cardsLeft);
   return (
     <div className="futureSectn ">
       <div className="top-future-sectn">
@@ -16,6 +19,17 @@ export default function Futuresection() {
       </div>
       <div className="bottm-future-sectn df">
         <div className="left-bottm-future">
+          {cardsLeft.map((card) => (
+            <div className="card">
+              <div className="card-top-sectn df">
+                <div className="icon center">
+                  <Image src={card.icon} alt="" width={48} height={36} />{" "}
+                </div>
+                <h4 className="icon-details">{card.title}</h4>
+              </div>
+              <p>{card.desc}</p>
+            </div>
+          ))}
           {/* <div className="card">
             <div className="card-top-sectn">
               <div className="icon"></div>
@@ -46,9 +60,6 @@ export default function Futuresection() {
               opportunities for people and develop the community we operate in.
             </p>
           </div> */}
-          <FutureSectionCard />
-          <FutureSectionCard />
-          <FutureSectionCard />
         </div>
         <div className="mid-bottm-future">
           <Image
@@ -59,9 +70,17 @@ export default function Futuresection() {
           />
         </div>
         <div className="right-bottm-future">
-          <FutureSectionCard />
-          <FutureSectionCard />
-          <FutureSectionCard />
+          {cardsright.map((card) => (
+            <div className="card">
+              <div className="card-top-sectn df">
+                <div className="icon center">
+                  <Image src={card.icon} alt="" width={48} height={36} />{" "}
+                </div>
+                <h4 className="icon-details">{card.title}</h4>
+              </div>
+              <p>{card.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

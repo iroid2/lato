@@ -32,12 +32,31 @@ a {
   line-height: 36px;
   font-family: $dosiFont;
   color: rgb(0, 151, 211);
+  font-weight: 600;
+  font-variant: normal;
+  font-stretch: 100%;
 }
 .subHeading {
-  // background-color: teal;
+  margin-top: 1.2rem;
   color: rgb(0, 0, 0);
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
   font-family: $abeeFont;
+}
+.btmLine {
+  // background-color: red;
+  border-bottom: 2px solid white;
+  line-height: 34px;
+  padding: 2rem 0rem;
+}
+.footer-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+.gp3 {
+  gap: 0.6rem;
+  margin-top: 0.7rem;
+  flex-direction: column;
 }
