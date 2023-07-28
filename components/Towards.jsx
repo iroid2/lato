@@ -26,7 +26,9 @@ export default function Towards() {
                 <h4 className="title">{card.title}</h4>
                 <p>{card.desc}</p>
               </div>
-              <Link href={"#"}>SEE WORK</Link>
+              <Link href={"#"}>
+                <p>SEE WORK</p>
+              </Link>
             </div>
           );
         })}

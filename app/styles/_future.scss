@@ -47,6 +47,7 @@ $dosiFont: "Dosis", sans-serif;
     }
     .left-bottm-future {
       display: flex;
+      gap: 1rem;
       width: 35%;
       flex-direction: column;
       @media (max-width: 768px) {
@@ -54,7 +55,6 @@ $dosiFont: "Dosis", sans-serif;
         width: 100%;
       }
       .card {
-        height: 30%;
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -94,7 +94,7 @@ $dosiFont: "Dosis", sans-serif;
       }
       img {
         width: 88%;
-        height: 90%;
+        height: 97%;
         // align-self: center;
         @media (max-width: 768px) {
           height: 500px;
@@ -106,6 +106,7 @@ $dosiFont: "Dosis", sans-serif;
     }
     .right-bottm-future {
       display: flex;
+      gap: 1rem;
       width: 35%;
       flex-direction: column;
       @media (max-width: 768px) {
@@ -113,7 +114,7 @@ $dosiFont: "Dosis", sans-serif;
         width: 100%;
       }
       .card {
-        height: 30%;
+        // height: 30%;
         display: flex;
         flex-direction: column;
         gap: 1rem;

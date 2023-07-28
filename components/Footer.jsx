@@ -1,4 +1,4 @@
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { FaArrowCircleRight } from "react-icons/fa";
 import React from "react";
 import { siteMap, products, contact } from "@/script";
 import Image from "next/image";
@@ -17,7 +17,7 @@ export default function Footer() {
             {siteMap.left.map((link) => {
               return (
                 <Link href={"#"}>
-                  <BsFillArrowRightCircleFill /> {link}
+                  <FaArrowCircleRight /> {link}
                 </Link>
               );
             })}
@@ -35,7 +35,7 @@ export default function Footer() {
             {siteMap.right.map((link) => {
               return (
                 <Link href={"#"}>
-                  <BsFillArrowRightCircleFill /> {link}
+                  <FaArrowCircleRight /> {link}
                 </Link>
               );
             })}
@@ -60,7 +60,7 @@ export default function Footer() {
           {products.links.map((link) => {
             return (
               <Link href={"#"}>
-                <BsFillArrowRightCircleFill /> {link}
+                <FaArrowCircleRight /> {link}
               </Link>
             );
           })}
