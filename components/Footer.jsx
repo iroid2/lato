@@ -39,18 +39,6 @@ export default function Footer() {
                 </Link>
               );
             })}
-            {/* <p>
-              <BsFillArrowRightCircleFill /> lorem
-            </p>
-            <p>
-              <BsFillArrowRightCircleFill /> lorem
-            </p>
-            <p>
-              <BsFillArrowRightCircleFill /> lorem
-            </p>
-            <p>
-              <BsFillArrowRightCircleFill /> lorem
-            </p> */}
           </div>
         </div>
       </div>
