@@ -6,7 +6,7 @@ import Image from "next/image";
 import { toward } from "@/script";
 export default function Towards() {
   //   const card = towardLink;
-  console.log(toward);
+  // console.log(toward);
   return (
     <div className="towardSetion">
       <div className="top-towards">

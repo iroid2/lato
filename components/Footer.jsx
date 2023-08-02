@@ -6,8 +6,8 @@ import { instaLink } from "@/script";
 import Link from "next/link";
 
 export default function Footer() {
-  console.log(siteMap);
-  console.log(products);
+  // console.log(siteMap);
+  // console.log(products);
   return (
     <div className="footer  ">
       <div className="siteMap ">

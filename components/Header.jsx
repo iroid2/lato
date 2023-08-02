@@ -62,7 +62,12 @@ export default function Header() {
           <GrMenu className="hameMen" />
         </h1>
         <div className="nav-log">
-          <Image src={"/images/logo.png"} alt="" width={150} height={130} />
+          <Image
+            src={"/images/zilla-log.png"}
+            alt=""
+            width={800}
+            height={200}
+          />
         </div>
         <div className="nav-Links center ">
           {navLinks.map((link) => (

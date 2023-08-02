@@ -2,8 +2,7 @@
 import React from "react";
 import { cardsLeft, cardsright } from "@/futureCard";
 export default function FutureSectionCard() {
-  console.log(cardsLeft.title);
-
+  // console.log(cardsLeft.title);
   return (
     <div className="card">
       <div className="card-top-sectn df">
