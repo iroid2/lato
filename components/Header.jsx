@@ -31,11 +31,6 @@ export default function Header() {
       path: "#",
       dot: ".",
     },
-    {
-      name: "CONTACT US",
-      path: "#",
-      dot: ".",
-    },
   ];
   return (
     <div className="header">
