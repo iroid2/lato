@@ -61,7 +61,7 @@ export default function Header() {
             src={"/images/zilla-log.png"}
             alt=""
             width={800}
-            height={200}
+            height={100}
           />
         </div>
         <div className="nav-Links center ">

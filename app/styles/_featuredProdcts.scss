@@ -8,6 +8,7 @@ $paddingBord: 0.5rem 10rem;
 .feature-section {
   background-color: aliceblue;
   margin-top: 2rem;
+  padding: 1.5rem 0;
   width: 100%;
   .featuredTop {
     width: 100%;
@@ -45,7 +46,7 @@ $paddingBord: 0.5rem 10rem;
       }
     }
   }
-  .category-cards {
+  .product-cards {
     display: grid;
     padding: $paddingBord;
     gap: 1rem;
@@ -54,7 +55,7 @@ $paddingBord: 0.5rem 10rem;
       grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
       padding: 1rem 1.2rem;
     }
-    .categoryCard {
+    .productCard {
       display: flex;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       align-items: center;

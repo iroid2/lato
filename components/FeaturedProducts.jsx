@@ -1,10 +1,10 @@
 import Headings from "./Headings";
 import Image from "next/image";
 import Link from "next/link";
-import getMilkProducts from "@/app/libs/getMilkProducts";
+import getProducts from "@/app/libs/getProducts";
 
 export default async function FeaturedProducts() {
-  const categories = await getMilkProducts();
+  const categories = await getProducts();
   return (
     <div className="feature-section">
       <div className="featuredTop">

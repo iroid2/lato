@@ -2,61 +2,53 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
+import Link from "next/link";
 import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 
-// import "./styles.css";
+import "../app/styles/style.css";
 
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
+import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
-export default function HeroSection() {
+// import SliderText from "./SliderText";
+
+export default function HeroSection({ data }) {
+  console.log(data);
   return (
     <>
       <Swiper
-        className="hero-section"
-        pagination={{
-          type: "progressbar",
+        spaceBetween={30}
+        effect={"fade"}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
         }}
         navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
+        pagination={{
+          clickable: true,
+        }}
+        modules={[EffectFade, Navigation, Pagination]}
+        className="heroSwiper"
       >
-        <SwiperSlide className="slide">
-          <Image
-            src={"/images/slide-img.jpg"}
-            alt=""
-            width={800}
-            height={300}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="slide"
-            src={"/images/slide-img.png"}
-            alt=""
-            width={800}
-            height={300}
-          />
-        </SwiperSlide>
-        <SwiperSlide className="slide">
-          <Image
-            className="slide"
-            src={"/images/slide-img6.jpg"}
-            alt=""
-            width={800}
-            height={300}
-          />
-        </SwiperSlide>
-        {/* <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide> */}
+        {data.map((product) => {
+          return (
+            <SwiperSlide className="swiperSlide df">
+              <div className="slideText">
+                {/* <h1>{product.slug}</h1> */}
+                <h2>{product.title}</h2>
+                {/* <Image src={"/images/viz.png"} alt="" width={130} height={280} /> */}
+                <p>{product.detailed_description}</p>
+                <Link href={`product/${product.slug}`}>
+                  <button>Order Now</button>
+                </Link>
+              </div>
+              <img src={product.image} />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </>
   );

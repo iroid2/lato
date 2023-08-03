@@ -1,86 +1,32 @@
 [
   {
-    "category": "Milk Products",
-    "cat_id": 1,
-    "description": "Milk is a nutrient-rich liquid produced by mammals. It is commonly consumed by humans and used in various food and beverage products.",
-    "image": "https://latomilk.com/wp-content/uploads/2018/12/SlimPack.png",
+    "id": 1,
+    "title": "Yorghut",
+    "description": "Explore our wide range of yorghut products, packed with essential nutrients and delicious flavors.",
+    "image": "yorghut_image.jpg",
+    "keywords": ["yorghut", "yogurt", "healthy", "probiotics"],
     "products": [
-      "Whole Milk",
-      "Skim Milk",
-      "2% Reduced-Fat Milk",
-      "Evaporated Milk",
-      "Flavored Milk (e.g., Chocolate, Strawberry)"
-    ],
-    "details": [
-      "Whole Milk",
-      "Skim Milk",
-      "2% Reduced-Fat Milk",
-      "Evaporated Milk",
-      "Flavored Milk "
-    ],
-    "cat_details": [
-      {
-        "name": "Whole Milk",
-        "image": "https://latomilk.com/wp-content/uploads/2018/12/Strawberry_Milk.jpg",
-        "slug": "whole-milk"
-      },
-      {
-        "name": "Skim Milk",
-        "image": "https://latomilk.com/wp-content/uploads/2018/12/Strawberry_Milk.jpg",
-        "slug": "skim-milk"
-      },
-      {
-        "name": "2% Reduced-Fat Milk",
-        "image": "https://latomilk.com/wp-content/uploads/2018/12/Strawberry_Milk.jpg",
-        "slug": "2%-reduced-fat"
-      },
-      {
-        "name": "Almond Milk",
-        "image": "https://latomilk.com/wp-content/uploads/2018/12/Strawberry_Milk.jpg",
-        "slug": "almond-milk"
-      }
+      "Fresh Yorghut",
+      "Organic Yorghut",
+      "Greek Yorghut",
+      "Strawberry Yorghut",
+      "Blueberry Yorghut",
+      "Vanilla Yorghut"
     ]
   },
   {
-    "category": "Yogurt Products",
-    "cat_id": 1,
-    "description": "Yogurt is a dairy product created by fermenting milk with bacteria. It is known for its probiotic benefits and comes in various flavors and forms.",
+    "id": 2,
+    "title": "Milk Products",
+    "description": "Discover our assortment of milk products, sourced from the finest dairy farms and available in various varieties.",
+    "image": "milk_products_image.jpg",
+    "keywords": ["milk products", "dairy", "healthy", "nutritious"],
     "products": [
-      "Plain Yogurt",
-      "Greek Yogurt",
-      "Strawberry Yogurt",
-
-      "Drinkable Yogurt",
-      "Non-Dairy Yogurt (e.g., Coconut, Almond, Soy)"
-    ],
-    "details": [
-      "Whole Milk",
-      "Skim Milk",
-      "2% Reduced-Fat Milk",
-      "Evaporated Milk",
-      "Flavored Milk "
-    ],
-    "cat_details": [
-      {
-        "name": "Strawberry Yorghut",
-        "image": "https://latomilk.com/wp-content/uploads/2022/07/Lato-Peach-Caramel-MainImage.jpeg",
-        "slug": "strawberry-Yorghut"
-      },
-      {
-        "name": "Blueberry Yorghut",
-        "image": "https://latomilk.com/wp-content/uploads/2022/07/Lato-Peach-Caramel-MainImage.jpeg",
-        "slug": "blueberry-Yorghut"
-      },
-      {
-        "name": "Vanilla Yorghut",
-        "image": "https://latomilk.com/wp-content/uploads/2022/07/Lato-Peach-Caramel-MainImage.jpeg",
-        "slug": "vanilla-Yorghut"
-      },
-      {
-        "name": "Almond Yorghut",
-        "image": "https://latomilk.com/wp-content/uploads/2022/07/Lato-Peach-Caramel-MainImage.jpeg",
-        "slug": "almond-Yorghut"
-      }
+      "Fresh Cow's Milk",
+      "Organic Goat's Milk",
+      "A2 Milk",
+      "Low-Fat Milk",
+      "Chocolate Milk",
+      "Almond Milk"
     ]
   }
 ]
