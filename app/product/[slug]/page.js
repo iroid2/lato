@@ -14,7 +14,7 @@ export default async function page({ params: { slug } }) {
   const product = products.find((product) => {
     return product.slug == slug;
   });
-  // console.log(products);
+
   return (
     <div className="detailed-page">
       <div className="detailed-product-sectn df">
@@ -42,10 +42,10 @@ export default async function page({ params: { slug } }) {
             </p>
           </div>
           <div className="cart-btns">
-            <Link href={"/buyer-form/"}>
+            <Link href={`/buyer-form/${product.slug}`}>
               <button>Buy Now</button>
             </Link>
-            <Link href={`/buyer-form/${slug}`}>
+            <Link href={`/buyer-form/${product.slug}`}>
               <button className="border-btn">Add to Cart</button>
             </Link>
           </div>
