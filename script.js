@@ -29,15 +29,7 @@ export const siteMap = {
 // Two separate arrays
 export const products = {
   title: "PRODUCTS",
-  links: [
-    "Milk powerder",
-    "liquid milk",
-    "yoghut",
-    "flavoured milk",
-    "	butter",
-    "butter oil",
-    "ghee",
-  ],
+  links: ["Milk powerder", "liquid milk", "yoghut", "flavoured milk"],
 };
 export const instaLink = {
   link: [
@@ -54,8 +46,8 @@ export const instaLink = {
 };
 export const contact = [
   {
-    location: "	Plot No 100, Kashari Block 7, Biharwe, District Mbarara, Uganda",
+    location: "	Plot No 100, Bugolobi Mbarara, Uganda",
     number: "		256-200-900-939",
-    email: "			info@latomilk.com",
+    email: "			info@zillamilk.com",
   },
 ];

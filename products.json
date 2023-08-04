@@ -73,8 +73,8 @@
     "detailed_description": "Our vanilla yorghut is made using real vanilla beans, giving it a delightful aroma and taste. It's a classic flavor loved by both kids and adults.",
     "keywords": ["yorghut", "yogurt", "vanilla", "creamy"],
     "image": "/images/viz.png",
-    "initialPrice": 2.99,
-    "currentPrice": 2.49,
+    "initialPrice": 30000,
+    "currentPrice": 20000,
     "images": ["vanilla_yorghut_image1.jpg", "vanilla_yorghut_image2.jpg"]
   },
   {
@@ -86,8 +86,8 @@
     "detailed_description": "Enjoy the goodness of fresh cow's milk sourced from well-nurtured cows. Our milk is known for its rich taste and essential nutrients, making it a healthy choice for all ages.",
     "keywords": ["milk", "fresh milk", "dairy", "healthy"],
     "image": "/images/milk.png",
-    "initialPrice": 3.99,
-    "currentPrice": 2.99,
+    "initialPrice": 15000,
+    "currentPrice": 10000,
     "images": ["milk_image1.jpg", "milk_image2.jpg", "milk_image3.jpg"]
   },
   {
@@ -99,8 +99,8 @@
     "detailed_description": "Our organic goat's milk is carefully handled and processed to retain its natural goodness and health benefits. It is high in essential vitamins and minerals, making it suitable for those with lactose sensitivities.",
     "keywords": ["milk", "organic milk", "goat milk", "natural", "nutritious"],
     "image": "/images/milk.png",
-    "initialPrice": 4.49,
-    "currentPrice": 3.99,
+    "initialPrice": 40000,
+    "currentPrice": 25000,
     "images": ["milk_image4.jpg", "milk_image5.jpg", "milk_image6.jpg"]
   },
   {
@@ -112,8 +112,8 @@
     "detailed_description": "Our A2 milk is sourced from cows with the A2 beta-casein protein, making it easier to digest for those who may have issues with regular milk. It contains all the essential nutrients and offers a creamy and delicious taste.",
     "keywords": ["milk", "A2 milk", "easy digestion", "healthy"],
     "image": "/images/milk.png",
-    "initialPrice": 3.99,
-    "currentPrice": 3.49,
+    "initialPrice": 20000,
+    "currentPrice": 17800,
     "images": ["milk_image7.jpg", "milk_image8.jpg", "milk_image9.jpg"]
   }
 ]

@@ -71,10 +71,8 @@ export default function Header() {
             </Link>
           ))}
         </div>
-        <div className="nav-actions">
-          <Image src={"/images/action1.png"} alt="" width={100} height={40} />
-          <Image src={"/images/action2.png"} alt="" width={100} height={40} />
-          <Image src={"/images/action3.png"} alt="" width={200} height={40} />
+        <div className="nav-actions center">
+          <button>SignUp</button>
         </div>
       </div>
     </div>

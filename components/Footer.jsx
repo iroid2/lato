@@ -6,10 +6,8 @@ import { instaLink } from "@/script";
 import Link from "next/link";
 
 export default function Footer() {
-  // console.log(siteMap);
-  // console.log(products);
   return (
-    <div className="footer  ">
+    <div className="footer">
       <div className="siteMap ">
         <h1 className="title btmLine">SITEMAP</h1>
         <div className="links df">
@@ -21,15 +19,6 @@ export default function Footer() {
                 </Link>
               );
             })}
-            {/* <Link href={"#"}>
-              <BsFillArrowRightCircleFill /> lorem
-            </Link>
-            <p>
-              <BsFillArrowRightCircleFill /> lorem
-            </p>
-            <p>
-              <BsFillArrowRightCircleFill /> lorem
-            </p> */}
           </div>
           <div className="right-site-links df gp3">
             {siteMap.right.map((link) => {

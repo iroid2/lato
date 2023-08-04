@@ -7,13 +7,14 @@ import { MdAssignmentReturned } from "react-icons/md";
 
 import getProducts from "@/app/libs/getProducts";
 import Swipper from "@/components/Swipper";
+import Link from "next/link";
 
 export default async function page({ params: { slug } }) {
   const products = await getProducts();
   const product = products.find((product) => {
     return product.slug == slug;
   });
-  console.log(products);
+  // console.log(products);
   return (
     <div className="detailed-page">
       <div className="detailed-product-sectn df">
@@ -41,8 +42,12 @@ export default async function page({ params: { slug } }) {
             </p>
           </div>
           <div className="cart-btns">
-            <button>Buy Now</button>
-            <button className="border-btn">Add to Cart</button>
+            <Link href={"/buyer-form/"}>
+              <button>Buy Now</button>
+            </Link>
+            <Link href={`/buyer-form/${slug}`}>
+              <button className="border-btn">Add to Cart</button>
+            </Link>
           </div>
           <div className="buyer-incentives">
             <div className="derivery incentive df">
