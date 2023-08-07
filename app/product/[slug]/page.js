@@ -8,12 +8,22 @@ import { MdAssignmentReturned } from "react-icons/md";
 import getProducts from "@/app/libs/getProducts";
 import Swipper from "@/components/Swipper";
 import Link from "next/link";
+import Products from "@/components/Products";
 
 export default async function page({ params: { slug } }) {
   const products = await getProducts();
   const product = products.find((product) => {
     return product.slug == slug;
   });
+
+  const catId = product.cat_id;
+  const productId = product.id;
+
+  const similarProduct = products.filter((product) => product.cat_id == catId);
+
+  const similarProducts = similarProduct.filter(
+    (product) => product.id != productId
+  );
 
   return (
     <div className="detailed-page">
@@ -71,6 +81,10 @@ export default async function page({ params: { slug } }) {
             </div>
           </div>
         </div>
+      </div>
+      <div className="w-full">
+        <h1>SimilarProducts</h1>
+        <Products title="Related Products" data={similarProducts} />
       </div>
     </div>
   );

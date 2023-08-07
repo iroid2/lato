@@ -20,7 +20,7 @@ body {
     }
     .bottm-towards {
       width: 100%;
-      margin-top: 2rem;
+      margin-top: 1rem;
       display: grid;
       gap: 1.7rem;
       grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
@@ -30,7 +30,7 @@ body {
       }
       .towards-Card {
         display: flex;
-        gap: 1rem;
+        gap: 0.5rem;
         flex-direction: column;
         img {
           width: 100%;

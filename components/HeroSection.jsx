@@ -17,7 +17,7 @@ import Image from "next/image";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 
 export default function HeroSection({ data }) {
-  console.log(data);
+  // console.log(data);
   return (
     <>
       <Swiper

@@ -1,21 +1,23 @@
+import image from "./public/images/towCard1.png";
+import toward2 from "./public/images/towa.png";
+import toward3 from "./public/images/towa3.png";
 export const toward = [
   {
-    image:
-      "https://latomilk.com/wp-content/uploads/2022/07/LatoHelp_Section.jpeg",
-    title: "LATO HELP",
-    desc: "An initiative to improve the lives of differently-abled children by providing access to their treatment free of charge.",
+    image: toward2,
+    title: "Dairy Producers Alliance",
+    desc: "Empowering and Equipping Local Dairy Farmers through Comprehensive Training to Transition into Thriving and Successful Commercial Dairy Farming.",
   },
   {
-    image:
-      "https://latomilk.com/wp-content/uploads/2022/07/DairyCommunity_Section.jpeg",
-    title: "FARMERS COMMUNITY",
-    desc: "A program to empower local dairy farmers to become commercial dairy farmers through rigorous dairy farming training.",
+    image: image,
+    title: "Zilla Dairy Cares",
+
+    desc: "Empowering Differently-Abled Children through Free Essential Treatments. Building an Inclusive Community, Fostering Hope, and Celebrating Uniqueness",
   },
+
   {
-    image:
-      "https://latomilk.com/wp-content/uploads/2022/07/LatoGreen_Section.jpeg",
-    title: "LATO GREEN",
-    desc: "We have collaborated with organizations to adopt eco-friendly ways to improve environmental sustainability.",
+    image: toward3,
+    title: "Eco-Conscious Dairy Farming",
+    desc: "At Zilla Dairy, we're committed to sustainable practices, minimizing our carbon footprint, and preserving the environment for a greener future.",
   },
 ];
 //footer links

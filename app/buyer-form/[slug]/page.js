@@ -7,9 +7,7 @@ export default async function page({ params: { slug } }) {
   const product = products.find((product) => {
     return product.slug == slug;
   });
-  console.log("product");
-  console.log(product.slug);
-  console.log("product");
+
   return (
     <div className="buyer-details df">
       <div className="buyerForm">

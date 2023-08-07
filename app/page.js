@@ -16,7 +16,7 @@ import getProducts from "./libs/getProducts";
 export default async function page() {
   const categories = await getCategories();
   const products = await getProducts();
-  const yorgut_products = console.log(categories);
+  // const yorgut_products = console.log(categories);
   return (
     <div className="container">
       <HeroSection data={products} />

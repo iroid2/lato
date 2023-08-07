@@ -80,6 +80,7 @@ export default function Swipper() {
             height={400}
           />
         </SwiperSlide>
+        a{" "}
         <SwiperSlide>
           <img
             src="https://swiperjs.com/demos/images/nature-9.jpg"

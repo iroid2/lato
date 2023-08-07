@@ -72,3 +72,22 @@ a {
 //   left: 5rem;
 //   z-index: 230;
 // }
+.gbPadding {
+  // padding: 0.3rem 3rem;
+}
+.w-full {
+  width: 100vw;
+  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  .productCard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    // background-color: green;
+    margin-left: 8px;
+  }
+}

@@ -3,12 +3,13 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Headings from "./Headings";
-import getProducts from "../app/libs/getProducts";
+
+import Products from "./Products";
+import getProducts from "@/app/libs/getProducts";
 export default async function Category() {
   const categories = await getCategories();
   const products = await getProducts();
 
-  //   console.log(products);
   return (
     <div className="categories">
       <div className="feature-section">
@@ -38,25 +39,7 @@ export default async function Category() {
                   </div>
                 </div>
               </div>
-              <div className="product-cards">
-                {products.splice(0, 4).map((product) => {
-                  return (
-                    <Link
-                      href={`./product/${product.slug}`}
-                      className="productCard"
-                    >
-                      <Image
-                        src={product.image}
-                        alt=""
-                        width={380}
-                        height={250}
-                      />
-                      <Headings subHeading={product.title} />
-                      {/* <h1>{detail.slug}</h1> */}
-                    </Link>
-                  );
-                })}
-              </div>
+              <Products data={products} />
             </div>
           );
         })}

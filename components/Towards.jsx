@@ -12,7 +12,7 @@ export default function Towards() {
       <div className="top-towards">
         <Headings
           subHeading={
-            "Beyond enriching lives, we believe Lato Milk can play an important role in enriching communities, good causes and the environment."
+            "At Zilla Dairy, we hold a strong belief that our milk can transcend its role in enriching lives and instead, make a profound impact on communities, support noble causes, and contribute positively to environmental conservation"
           }
           title={"TOWARDS A HEALTHY FUTURE"}
         />
@@ -21,7 +21,7 @@ export default function Towards() {
         {toward.map((card) => {
           return (
             <div className="towards-Card">
-              <Image src={card.image} alt="" width={300} height={260} />
+              <Image src={card.image} alt="" width={250} height={200} />
               <div className="towars-card-text">
                 <h4 className="title">{card.title}</h4>
                 <p>{card.desc}</p>

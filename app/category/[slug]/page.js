@@ -8,7 +8,7 @@ export default async function page({ category, title, slug }) {
   const cat = categories.find((cat) => {
     return cat.slug == slug;
   });
-  console.log(category);
+  // console.log(category);
   return (
     <div className="category-page">
       <Products />
