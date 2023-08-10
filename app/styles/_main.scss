@@ -14,9 +14,9 @@ body {
   min-height: 100vh;
   // position: relative;
   .header {
-    width: 100%;
+    width: 100vw;
     @media (max-width: 768px) {
-      flex-direction: column-reverse;
+      background-color: red;
     }
     .top-header {
       padding: $paddingBord;
@@ -36,7 +36,6 @@ body {
     }
     .nav-header {
       background-color: white;
-      // position: sticky;
       height: 60px;
       gap: 3rem;
       justify-content: space-between;
@@ -45,7 +44,10 @@ body {
       // padding: 0.2rem 1rem;
       @media (max-width: 768px) {
         position: relative;
-        //         position: initial;
+        flex-direction: row-reverse;
+        width: 100vw;
+        padding: 0 2rem;
+        // background-color: red;
       }
       .hameMen {
         display: none;
@@ -56,10 +58,9 @@ body {
       .nav-log {
         width: 15%;
         display: flex;
-        // align-items: center;
-        // background-color: red;
+
         @media (max-width: 768px) {
-          width: 100%;
+          width: 36%;
           display: flex;
           object-fit: contain;
           justify-content: end;
