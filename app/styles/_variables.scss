@@ -94,14 +94,15 @@ a {
     justify-content: center;
     @media (max-width: 768px) {
       gap: 1rem;
-      align-items: self-start;
+      align-items: flex-start;
     }
     .productCard {
+      margin-top: 1.2rem;
       width: 15%;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       margin-left: 8px;
       @media (max-width: 768px) {
-        width: 30%;
+        width: 36%;
       }
       img {
         object-fit: fill;
