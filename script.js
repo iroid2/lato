@@ -48,7 +48,7 @@ export const instaLink = {
 };
 export const contact = [
   {
-    location: "	Plot No 100, Bugolobi Mbarara, Uganda",
+    location: "	Plot No 100, Bugolobi Kampala, Uganda",
     number: "		256-200-900-939",
     email: "			info@zillamilk.com",
   },

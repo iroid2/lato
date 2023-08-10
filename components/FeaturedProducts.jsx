@@ -18,7 +18,7 @@ export default async function FeaturedProducts() {
           <div className="right-btmFeatured  categoryDescrip">
             <p className="descr">{"desc"}</p>
             <div className="features">
-              <li>Apricot Flavoured Yoghurt</li>
+              <li>zilla Flavoured Yoghurt</li>
               <li>Butterscotch Flavoured Yoghurt</li>
               <li>Coconut Flavoured Yoghurt</li>
               <li>Peach Flavoured Yoghurt</li>

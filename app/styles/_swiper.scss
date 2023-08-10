@@ -6,12 +6,12 @@ $primColor: #08004f;
 
   padding: 0.2rem 3rem;
   @media (max-width: 868px) {
-    height: 30vh;
+    height: 45vh;
   }
   .swiperSlide {
     display: flex;
     @media (max-width: 768px) {
-      // flex-direction: column;
+      flex-direction: column;
     }
     .slideText {
       display: flex;
@@ -21,6 +21,10 @@ $primColor: #08004f;
       background-color: $primColor;
       color: rgb(242, 239, 239);
       padding: 1.4rem 3.5rem;
+      @media (max-width: 768px) {
+        width: 100%;
+        height: 300px;
+      }
       button {
         color: #08004f;
         background-color: white;
@@ -61,8 +65,12 @@ $primColor: #08004f;
     }
     img {
       width: 50%;
-      object-fit: contain;
+      object-fit: cover;
       @media (max-width: 868px) {
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+        object-fit: contain;
       }
     }
   }

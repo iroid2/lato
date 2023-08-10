@@ -10,6 +10,10 @@ $paddingBord: 0.5rem 10rem;
   margin-top: 2rem;
   padding: 1.5rem 0;
   width: 100%;
+  @media (max-width: 768px) {
+    padding: 0;
+    margin-top: 0rem;
+  }
   .featuredTop {
     width: 100%;
     display: grid;
@@ -28,6 +32,9 @@ $paddingBord: 0.5rem 10rem;
         img {
           width: 100%;
           object-fit: fit;
+          @media (max-width: 768px) {
+            object-fit: cover;
+          }
         }
       }
       .right-btmFeatured {
