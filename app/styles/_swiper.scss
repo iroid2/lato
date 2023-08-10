@@ -1,3 +1,4 @@
+$primColor: #08004f;
 .heroSwiper {
   height: 70vh;
   position: relative;
@@ -17,9 +18,18 @@
       flex-direction: column;
       gap: 1rem;
       width: 50%;
-      background-color: #090809;
+      background-color: $primColor;
       color: rgb(242, 239, 239);
       padding: 1.4rem 3.5rem;
+      button {
+        color: #08004f;
+        background-color: white;
+        &:hover {
+          background-color: rgb(212, 28, 59);
+          cursor: pointer;
+          color: white;
+        }
+      }
       @media (max-width: 868px) {
         padding: 0.5rem 1rem;
       }

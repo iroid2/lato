@@ -5,11 +5,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+$primColor: #08004f;
 $primaryOrange: #fda901;
 $paddingBord: 0.5rem 10rem;
 $dosiFont: "Dosis", sans-serif;
 body {
-  // background-color: red;
   width: 100vw;
   min-height: 100vh;
   // position: relative;
@@ -22,7 +22,7 @@ body {
       font-size: 1.2rem;
       display: flex;
       gap: 1rem;
-      background-color: #293c8f;
+      background-color: $primColor;
       color: white;
       @media (max-width: 768px) {
         padding: 0.3rem 0.5rem;
@@ -62,16 +62,14 @@ body {
           justify-content: end;
         }
         img {
-          // margin-left: 7.7%;
-          top: 0;
-          height: 145px;
-          // z-index: 230;
-          // left: 1rem;
+          object-fit: contain;
+          width: 200px;
+          // height: 170px;
           @media (max-width: 888px) {
-            margin-left: 1rem;
+            // margin-left: 1rem;
             position: relative;
-            width: 50%;
-            object-fit: cover;
+            width: 130px;
+            object-fit: contain;
           }
         }
       }
@@ -85,7 +83,7 @@ body {
           display: none;
         }
         a {
-          color: #1aa1d7;
+          color: $primColor;
           font-family: $dosiFont;
           font-size: 19px;
           font-weight: 900;

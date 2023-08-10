@@ -23,7 +23,7 @@ export default async function Category() {
                 <div className="bottm-featured  ">
                   <div className="left-btmFeatured">
                     <Image
-                      src={"/images/yoga.jpg"}
+                      src={"/images/carton.jpg"}
                       alt=""
                       width={300}
                       height={400}

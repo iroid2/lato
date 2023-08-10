@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
 $abeeFont: "ABeeZee", sans-serif;
 $paddingBord: 0.5rem 10rem;
+$primColor: #08004f;
 body {
   //   background-color: red;
   .towardSetion {
@@ -54,7 +55,7 @@ body {
       }
     }
     a {
-      background-color: rgb(0, 151, 211);
+      background-color: $primColor;
       text-align: center;
       overflow: hidden;
       padding: 2rem;

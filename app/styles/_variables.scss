@@ -4,6 +4,7 @@
 
 $dosiFont: "Dosis", sans-serif;
 $abeeFont: "ABeeZee", sans-serif;
+
 .df {
   display: flex;
 }
@@ -31,7 +32,7 @@ a {
   font-size: 30px;
   line-height: 36px;
   font-family: $dosiFont;
-  color: rgb(0, 151, 211);
+  color: $primColor;
   font-weight: 600;
   font-variant: normal;
   font-stretch: 100%;
@@ -90,4 +91,17 @@ a {
     // background-color: green;
     margin-left: 8px;
   }
+}
+$primColor: #08004f;
+button {
+  background-color: $primColor;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+}
+.error {
+  color: red;
+  font-size: 1.2rem;
 }
