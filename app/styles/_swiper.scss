@@ -12,6 +12,7 @@ $primColor: #08004f;
     display: flex;
     @media (max-width: 768px) {
       flex-direction: column;
+      flex-direction: column-reverse;
     }
     .slideText {
       display: flex;
