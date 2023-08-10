@@ -39,15 +39,11 @@ body {
       height: 60px;
       gap: 3rem;
       justify-content: space-between;
-      // position: relative;
-
-      // padding: 0.2rem 1rem;
       @media (max-width: 768px) {
         position: relative;
         flex-direction: row-reverse;
         width: 100vw;
         padding: 0 2rem;
-        // background-color: red;
       }
       .hameMen {
         display: none;

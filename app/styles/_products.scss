@@ -9,6 +9,9 @@ $paddingBord: 0.5rem 7rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
     gap: 1rem;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
     .product {
       padding-bottom: 0.5rem 0.5rem;
       img {
