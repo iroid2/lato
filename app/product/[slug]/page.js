@@ -51,14 +51,7 @@ export default async function page({ params: { slug } }) {
               miss out
             </p>
           </div>
-          <div className="cart-btns">
-            <Link href={`/buyer-form/${product.slug}`}>
-              <button>Buy Now</button>
-            </Link>
-            <Link href={`/buyer-form/${product.slug}`}>
-              <button className="border-btn">Add to Cart</button>
-            </Link>
-          </div>
+
           <div className="buyer-incentives">
             <div className="derivery incentive df">
               <div className=" center incentive-icon">
