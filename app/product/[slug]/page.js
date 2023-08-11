@@ -40,18 +40,14 @@ export default async function page({ params: { slug } }) {
             <h4 className="current-price">UGX {product.currentPrice}</h4>
             <p className="initial-price">{product.initialPrice}</p>
           </div>
-          <div className="product-counter-section ">
-            <div className="counter df">
-              <div className="minus center">-</div>
-              <span className="counter-value center">1</span>
-              <div className="plus center">+</div>
-            </div>
-            <p className="left-qty">
-              only <span className="qty">12 cartons</span>left <br></br> dont
-              miss out
-            </p>
+          <div className="cart-btns">
+            <Link href={`/buyer-form/${product.slug}`}>
+              <button>Buy Now</button>
+            </Link>
+            <Link href={`/buyer-form/${product.slug}`}>
+              <button className="border-btn">Add to Cart</button>
+            </Link>
           </div>
-
           <div className="buyer-incentives">
             <div className="derivery incentive df">
               <div className=" center incentive-icon">

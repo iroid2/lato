@@ -7,7 +7,7 @@ import CopyrightBanner from "@/components/CopyrightBanner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Lato Clone",
+  title: "Zilla Yoghurt",
   description: "Inspired to to server You",
 };
 
