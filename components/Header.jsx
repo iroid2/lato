@@ -10,7 +10,7 @@ import { useState } from "react";
 export default function Header() {
   const [showNavigation, setShowNavigation] = useState(false);
   function handleNavigation() {
-    setShowNavigation(true);
+    setShowNavigation(!showNavigation);
   }
   const navLinks = [
     {
