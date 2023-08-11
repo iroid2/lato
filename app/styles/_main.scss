@@ -44,9 +44,12 @@ body {
 
         // flex-direction: row-reverse;
         width: 100vw;
-        padding: 0 1rem;
+        padding: 0 0.3rem;
       }
       .nav-log {
+        @media (max-width: 768px) {
+          width: 16%;
+        }
         img {
           @media (max-width: 768px) {
             height: 130px;
@@ -85,6 +88,7 @@ body {
           transform: scale(0.5);
           opacity: 0;
           visibility: hidden;
+          z-index: 300;
           cursor: pointer;
           a {
             color: white;
@@ -92,11 +96,22 @@ body {
           }
         }
       }
+      .showNav {
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+      }
       .hameMen {
         display: none;
         @media (max-width: 766px) {
           display: block;
+          padding-right: 1.2rem;
           font-size: 3rem;
+        }
+      }
+      .nav-actions {
+        @media (max-width: 768px) {
+          width: 50%;
         }
       }
     }

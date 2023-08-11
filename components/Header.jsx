@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { BsTwitter, BsInstagram } from "react-icons/bs";
@@ -5,7 +6,12 @@ import { TfiYoutube } from "react-icons/tfi";
 import Link from "next/link";
 import { GrMenu } from "react-icons/gr";
 import Image from "next/image";
+import { useState } from "react";
 export default function Header() {
+  const [showNavigation, setShowNavigation] = useState(false);
+  function handleNavigation() {
+    setShowNavigation(true);
+  }
   const navLinks = [
     {
       name: "Home",
@@ -62,7 +68,7 @@ export default function Header() {
             height={100}
           />
         </div>
-        <div className="nav-Links  ">
+        <div className={showNavigation ? "nav-Links showNav " : "nav-Links"}>
           {navLinks.map((link) => (
             <Link href={link.path}>
               <span className="linkDot">{link.dot} </span> {link.name}
@@ -73,7 +79,7 @@ export default function Header() {
           <button>SignUp</button>
         </div>
         <div>
-          <GrMenu className="hameMen" />
+          <GrMenu onClick={handleNavigation} className="hameMen" />
         </div>
       </div>
     </div>
