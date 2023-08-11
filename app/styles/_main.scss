@@ -37,6 +37,7 @@ body {
     .nav-header {
       background-color: white;
       height: 60px;
+      overflow: hidden;
       gap: 3rem;
       justify-content: space-between;
       @media (max-width: 866px) {
@@ -78,17 +79,18 @@ body {
           position: absolute;
           flex-direction: column;
           background-color: $primColor;
-          text-align: center;
-          height: 60vh;
+          // text-align: center;
+          height: auto;
           width: 70%;
           top: 3.6rem;
-          padding: 2rem 2rem;
+          padding: 2rem 4rem;
           border-bottom: 2px solid gray, 0.3;
           // transform: scale(0.5);
           right: -100rem;
           opacity: 0;
           visibility: hidden;
-          z-index: 300;
+          // z-index: 300;
+
           transition: all 0.5s ease-in-out;
 
           cursor: pointer;

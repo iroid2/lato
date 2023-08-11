@@ -16,27 +16,22 @@ export default function Header() {
     {
       name: "Home",
       path: "#",
-      dot: ".",
     },
     {
       name: "ABOUT US",
       path: "#",
-      dot: ".",
     },
     {
       name: "MILK",
       path: "#",
-      dot: ".",
     },
     {
       name: "YORGHURT",
       path: "#",
-      dot: ".",
     },
     {
       name: "CONTACT US",
       path: "#",
-      dot: ".",
     },
   ];
   return (
@@ -71,7 +66,7 @@ export default function Header() {
         <div className={showNavigation ? "nav-Links showNav " : "nav-Links"}>
           {navLinks.map((link) => (
             <Link href={link.path}>
-              <span className="linkDot">{link.dot} </span> {link.name}
+              <span className="linkDot"> </span> {link.name}
             </Link>
           ))}
         </div>
