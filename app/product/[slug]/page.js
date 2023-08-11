@@ -29,7 +29,7 @@ export default async function page({ params: { slug } }) {
     <div className="detailed-page">
       <div className="detailed-product-sectn df">
         <div className="left-detailed-page">
-          <Image src={product.image} alt="" width={200} height={400} />
+          <Image src={product.image} alt="" width={500} height={400} />
         </div>
         <div className="right-detailed-page ">
           <div className="product-details">

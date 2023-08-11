@@ -16,7 +16,7 @@ body {
   .header {
     width: 100vw;
     @media (max-width: 768px) {
-      background-color: red;
+      background-color: rgb(18, 11, 214);
     }
     .top-header {
       padding: $paddingBord;
@@ -39,80 +39,64 @@ body {
       height: 60px;
       gap: 3rem;
       justify-content: space-between;
-      @media (max-width: 768px) {
+      @media (max-width: 866px) {
         position: relative;
-        flex-direction: row-reverse;
+
+        // flex-direction: row-reverse;
         width: 100vw;
-        padding: 0 2rem;
-      }
-      .hameMen {
-        display: none;
-        @media (max-width: 888px) {
-          display: block;
-        }
+        padding: 0 1rem;
       }
       .nav-log {
-        width: 15%;
-        display: flex;
-
-        @media (max-width: 768px) {
-          width: 36%;
-          display: flex;
-          object-fit: contain;
-          justify-content: end;
-        }
         img {
-          object-fit: contain;
-          width: 200px;
-          // height: 170px;
-          @media (max-width: 888px) {
-            // margin-left: 1rem;
-            position: relative;
-            width: 130px;
-            object-fit: contain;
+          @media (max-width: 768px) {
+            height: 130px;
           }
+        }
+        .nav-actions {
+          padding: 0.2rem 1rem;
+          border-left: 2px solid $primaryOrange;
+          display: flex;
+          gap: 1rem;
+          width: 25%;
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+        button {
+          padding: 0.4rem 2rem;
         }
       }
       .nav-Links {
-        width: 60%;
+        display: flex;
         gap: 2rem;
-        justify-content: flex-end;
+        @media (max-width: 766px) {
+          width: 100%;
 
-        // margin-left: 15%;
-        @media (max-width: 988px) {
-          display: none;
-        }
-        a {
-          color: $primColor;
-          font-family: $dosiFont;
-          font-size: 19px;
-          font-weight: 900;
-          line-height: 80px;
-          font-stretch: 100%;
-          .linkDot {
-            color: $primaryOrange;
-            font-size: 2rem;
+          position: absolute;
+          flex-direction: column;
+          background-color: $primColor;
+          text-align: center;
+          height: 60vh;
+          width: 100%;
+          top: 4rem;
+          left: 0;
+          padding: 2rem 2rem;
+          border-bottom: 2px solid gray, 0.3;
+          transform: scale(0.5);
+          opacity: 0;
+          visibility: hidden;
+          cursor: pointer;
+          a {
+            color: white;
+            font-size: 1.2rem;
           }
         }
       }
-      .nav-actions {
-        padding: 0.2rem 1rem;
-        border-left: 2px solid $primaryOrange;
-        display: flex;
-        gap: 1rem;
-        width: 25%;
-        @media (max-width: 768px) {
-          display: none;
-        }
-        // img {
-        //   width: 60px;
-        //   height: 39px;
-        //   @media (max-width: 788px) {
-        //     width: 50px;
-        //   }
-        // }
-        button {
-          padding: 0.4rem 2rem;
+      .hameMen {
+        display: none;
+        @media (max-width: 766px) {
+          display: block;
+          font-size: 3rem;
         }
       }
     }

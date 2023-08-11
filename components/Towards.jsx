@@ -5,8 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { toward } from "@/script";
 export default function Towards() {
-  //   const card = towardLink;
-  // console.log(toward);
   return (
     <div className="towardSetion">
       <div className="top-towards">
@@ -21,7 +19,7 @@ export default function Towards() {
         {toward.map((card) => {
           return (
             <div className="towards-Card">
-              <Image src={card.image} alt="" width={250} height={200} />
+              <Image src={card.image} alt="" width={450} height={200} />
               <div className="towars-card-text">
                 <h4 className="title">{card.title}</h4>
                 <p>{card.desc}</p>

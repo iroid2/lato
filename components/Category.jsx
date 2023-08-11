@@ -25,7 +25,7 @@ export default async function Category() {
                     <Image
                       src={"/images/YOHURT2.jpg"}
                       alt=""
-                      width={300}
+                      width={700}
                       height={400}
                     />
                   </div>

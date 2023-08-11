@@ -9,7 +9,7 @@ export default async function Products({ title, data }) {
       {data.splice(0, 4).map((product) => {
         return (
           <Link href={`./product/${product.slug}`} className="productCard">
-            <Image src={product.image} alt="" width={200} height={250} />
+            <Image src={product.image} alt="" width={500} height={250} />
             <Headings subHeading={product.title} />
             {/* <h1>{detail.slug}</h1> */}
           </Link>

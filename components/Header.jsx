@@ -8,8 +8,9 @@ import Image from "next/image";
 export default function Header() {
   const navLinks = [
     {
-      name: "🏠",
+      name: "Home",
       path: "#",
+      dot: ".",
     },
     {
       name: "ABOUT US",
@@ -53,18 +54,15 @@ export default function Header() {
         </Link>
       </div>
       <div className="nav-header center">
-        <h1>
-          <GrMenu className="hameMen" />
-        </h1>
-        <div className="nav-log">
+        <div className="nav-log center">
           <Image
             src={"/images/zilla-log.png"}
             alt=""
-            width={800}
-            height={300}
+            width={200}
+            height={100}
           />
         </div>
-        <div className="nav-Links center ">
+        <div className="nav-Links  ">
           {navLinks.map((link) => (
             <Link href={link.path}>
               <span className="linkDot">{link.dot} </span> {link.name}
@@ -73,6 +71,9 @@ export default function Header() {
         </div>
         <div className="nav-actions center">
           <button>SignUp</button>
+        </div>
+        <div>
+          <GrMenu className="hameMen" />
         </div>
       </div>
     </div>
